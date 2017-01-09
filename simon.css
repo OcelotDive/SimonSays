@@ -1,0 +1,183 @@
+body
+{
+    background-color:beige;
+}
+
+#container {
+    position: absolute;
+    width:700px;
+
+    display: flex;
+    flex-direction: row;
+    min-height: 350px;
+    align-items:stretch;
+    left:20%;
+
+}
+
+
+.box { width: 200px; 
+        height: 100px; 
+        padding-top: 15px; 
+        position: relative; 
+        color: white; 
+        font-size: 11px; 
+        letter-spacing: 0.2em; 
+        text-align: center; 
+        text-transform: uppercase; 
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        border-top-left-radius: 10%;
+        border-top-right-radius: 100%;
+        border: 5px black solid;
+
+} 
+.box:after { 
+      
+      position: absolute; 
+      left: 0; 
+      bottom: 0; 
+      width: 0; 
+      height: 0; 
+      border-bottom: 8px solid grey; 
+      border-left: 55px solid grey; 
+      border-right: 55px solid grey; 
+
+  }
+.box:nth-child(1) {
+     background: #D06175;
+    -ms-transform: rotate(270deg); /* IE 9 */
+    -webkit-transform: rotate(270deg); /* Chrome, Safari, Opera */
+    transform: rotate(270deg);
+    top: 88px;
+    left: 400px;
+    z-index: 3;
+    
+    }
+.box:nth-child(2) {
+        background: #2F6503;
+        top: 62px;
+        left: 410px;
+        z-index: 3;
+       
+    }
+.box:nth-child(3) {
+     background: #2A7CBF;
+    -ms-transform: rotate(90deg); /* IE 9 */
+    -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+    transform: rotate(90deg);
+    top:280px;
+    left: 250px;
+    z-index: 3;
+    }
+.box:nth-child(4) {
+        background: #AB993F;
+    -ms-transform: rotate(180deg); /* IE 9 */
+    -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+    transform: rotate(180deg);
+    top:310px;
+    left: -100px;
+    z-index: 3;
+    }
+#startSwitch {
+    width: 40px;
+    height: 20px;
+    position: absolute;
+    border: solid 1px black;
+    top: 270px;
+    left: 500px;
+    background-color: #808080;
+    color:red;
+    font-size: 6pt;
+    text-align: right;
+    line-height: 10px;
+    border: solid black 5px;
+    border-radius: 20%;
+    z-index: 3;
+
+}
+#toggle {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: #000000;
+    width:20px;
+    height: 100%;
+    z-index: 3;
+}
+#counterDisplay {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border: ridge 1px black;
+    text-align: center;
+    color: red;
+    font-size: 30pt;
+    font-family: 'Black Ops One', cursive;
+    background-color:#000000;
+    left: 556px;
+    top: 215px;
+    z-index: 3;
+    border-radius: 20px;
+    text-shadow: 5px 5px 5px red;
+    line-height: 55px;
+}
+#arrowUp {
+  position: absolute;
+  top: 5px;
+  left:5px;
+  width: 0; 
+  height: 0; 
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  
+  border-bottom: 8px solid #f00;
+  z-index: 3;
+}
+#arrowDown {
+  position: absolute;
+  top: 15px;
+  left: 5px;
+  width: 0; 
+  height: 0; 
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 8px solid #f00;
+  z-index: 3;
+}
+#arrowContainer {
+ position: absolute;
+ width: 20px;
+ height: 40px;
+ left: 425px;
+ top: 250px;
+ z-index: 3;
+}
+#circle {
+    position:absolute;
+    height: 400px;
+    width: 400px;
+    background-color: darkslategrey;
+    border-radius: 50%;
+    left:380px;
+    z-index: 0;
+    top: 35px;
+    border: solid black 10px;
+    box-shadow: 50px 50px 50px;
+    
+}
+#strictButton {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color:red;
+    top: 15px;
+    left: 30px;
+    border: solid 5px black;
+    color: #ffffff;
+    font-size: 6pt;
+    text-align:center;
+    line-height: 25px;
+}
